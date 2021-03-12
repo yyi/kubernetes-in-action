@@ -11,4 +11,5 @@ spec:
         path: /
         port: 8080
       initialDelaySeconds: 15
-
+      timeoutSeconds: 15
+      periodSeconds: 60

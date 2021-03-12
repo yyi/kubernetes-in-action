@@ -8,6 +8,7 @@ spec:
   - port: 80
     targetPort: 8080
     nodePort: 30123
+    name: http
   selector:
     app: kubia
 

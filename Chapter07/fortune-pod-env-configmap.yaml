@@ -5,9 +5,12 @@ metadata:
 spec:
   containers:
   - image: luksa/fortune:env
+#    envFrom:
+#      - configMapRef:
+#          name: fortune-config
     env:
     - name: INTERVAL
-      valueFrom: 
+      valueFrom:
         configMapKeyRef:
           name: fortune-config
           key: sleep-interval

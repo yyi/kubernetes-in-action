@@ -3,9 +3,14 @@ kind: Service
 metadata:
   name: kubia
 spec:
+  sessionAffinity: ClientIP
   ports:
   - port: 80
     targetPort: 8080
+    name: http
+  - port: 443
+    targetPort: 1443
+    name: https
   selector:
     app: kubia
 

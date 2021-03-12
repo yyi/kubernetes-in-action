@@ -7,6 +7,8 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
+  externalIPs:
+    - 10.9.10.136
   selector:
     app: kubia
 
